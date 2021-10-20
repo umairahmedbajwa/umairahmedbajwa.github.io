@@ -45,6 +45,11 @@ body {
 	font-weight: 400;
 }
 
+.banner-content .sub-banner .mb-20 span {
+	color: #00a3e1 !important;
+	font-weight: 900;
+}
+
 .cd-words-wrapper b {
 	border-bottom: 2px solid #00a3e1;
 	font-weight: 700;
