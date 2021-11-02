@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap");
 /* font-family: 'Poppins', sans-serif; */
 
+:root {
+	--milk: #e7e4e4;
+	--red: #ff4858;
+	--orange: #ffa500;
+}
 body {
 	font-family: "Playfair Display", serif;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 .homeImg {
@@ -13,7 +22,7 @@ body {
 }
 
 .banner-content {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.4);
 	color: white;
 	display: block;
 	position: fixed;
@@ -37,7 +46,11 @@ body {
 	position: fixed;
 	top: 35%;
 	width: 100%;
+	/* z-index: 99999; */
 }
+
+/* es eigma script
+esp */
 
 .sub-banner p {
 	font-family: "roboto", sans-serif;
@@ -50,10 +63,10 @@ body {
 	font-weight: 900;
 }
 
-.cd-words-wrapper b {
+/* .cd-words-wrapper b {
 	border-bottom: 2px solid #00a3e1;
 	font-weight: 700;
-}
+} */
 
 .txt-rotate {
 	border-bottom: 2px solid #00a3e1;
@@ -71,13 +84,43 @@ img {
 	max-height: 100%;
 	z-index: -2;
 }
+/* Navbar custom */
 
+.navbar {
+	background-color: rgba(0, 0, 0, 0.4);
+	border: none;
+	border-radius: 0;
+	margin-bottom: 0;
+	box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.28) !important;
+}
+
+ul.nav li a {
+	color: var(--milk) !important;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+ul.nav li a:hover {
+	color: var(--orange) !important;
+}
 /* Helper classes */
 .px-0 {
 	padding-left: 0;
 	padding-right: 0;
 }
 
+.mb-0 {
+	margin-bottom: 0;
+}
+
 .mb-20 {
 	margin-bottom: 20px;
+}
+
+.transparent {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.border-0 {
+	border: none;
 }
